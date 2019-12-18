@@ -1,0 +1,140 @@
+.grid-container{
+
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 50px;
+    min-width: 10%;
+    max-width: 100%;
+    grid-template-columns:20% 20% 20% 20% 20%;
+    grid-template-rows:20% 10% 40% 20% 10%;
+    overflow: auto;
+    margin: 40px;
+    margin-left: 8em;
+}
+
+body{
+    background-color:blue;
+    position: relative;
+    }
+
+.box{
+    position: relative;
+    vertical-align: middle;
+    background-color:white;
+    text-align: center;
+    border: 5px solid white;
+}
+
+.nav-bar{
+    grid-column: 1/5;
+    grid-row: 1/1;
+    background-color:orange;
+    height: 20vh;
+    padding-left: 22.5em;
+    
+}
+
+.tble{
+grid-column: 1/5;
+grid-row: 3/5;
+}
+
+.tble table{
+        width:100%;
+        height:100%;
+        box-shadow: inset orange 20px 0px 120px;
+        border: solid rgba(0,0,0,0.5) 5px;
+        }
+        
+        thead td{
+        border:solid black 5px;
+        }
+        
+        tbody{
+        background-color: white;
+        }
+        
+        tbody td{
+        border:double black 10px;
+        }
+        
+        td{
+        font-size: large;
+        }   
+}
+
+.nav-bar{
+    grid-column: 1/6;
+    grid-row: 1/1;
+    background-color:orange;
+    height: 20vh;
+    padding-left: 22.5em;
+    
+}
+
+a {
+    text-decoration: none;
+  }
+  
+  ul {
+    background:black;
+      list-style: none;
+      margin: 0;
+  }
+  
+  li {
+      color: #fff;
+    background: black;
+      display: block;
+      float: left;
+      padding: 1rem;
+      position: relative;
+      text-decoration: none;
+    transition-duration: 0.5s;
+  }
+    
+  li a {
+    color: #fff;
+  }
+  
+  li:hover,
+  li:focus-within {
+      background:lightblue;
+      cursor: pointer;
+      box-shadow:inset blue 10px 10px 35px;
+      color:black;
+  }
+  
+  li:focus-within a {
+    outline: none;
+    color: blue;
+  }
+  
+  ul li ul {
+    position:absolute;
+      background:white;
+      visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+      left:0;
+    display: none;
+  }
+  
+  ul li:hover > ul,
+  ul li:focus-within > ul,
+  ul li ul:hover,
+  ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+  
+  ul li ul li {
+      clear: both;
+    width:100%;
+    visibility:visible;
+    padding:auto;
+    left: -30%;
+  }
